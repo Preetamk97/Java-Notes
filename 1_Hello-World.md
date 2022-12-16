@@ -1,3 +1,12 @@
+# Environment Setup
+
+## Necessary Installations:
+
+1. **IDE - VS Code or Eclipse** : Download & install from official websites.
+1. **Java Developmen Kit (If using Eclipse)**: Download JDK separately and install it (steps shown in Bro Code PDF) >> After successfull installion give a system restart >> After ther restart, to check if the JDK is installed successfully -- run `java --version` -- on a command prompt.
+1. **Java Developmen Kit (If using VS Code)**: Google search "Java for VS Code" >> Go to the first link (code.visualstudio.com/docs/languages/java) >> Download & install the "Coding Pack for Java - Windows/Mac" in your system. This will install all the necessary VS Code Extensions + JDK necessary for Java development >> After successfull installion give a system restart >> After ther restart, to check if the JDK is installed successfully -- run `java --version` -- on a command prompt.
+
+
 # Printing 'Hello World' in Java.
 
 ```java
@@ -37,6 +46,12 @@ public class Main {
 	}
 }
 ```
+
+# Compiling and Running Java File from Command Prompt:
+
+1. javac HelloWorld.java (to compile)
+1. java HelloWorld (to run a .class file, it's portable)
+
 
 # Use of Escape Sequence '\t' (= tab while printing in console)
 
@@ -99,8 +114,3 @@ public class Main {
 		Zooming In ----- Ctrl + [+ key] 
 		Zooming Out ------ Ctrl + [- key]
 
-
-# Compiling and Running Java File from Command Prompt:
-
-1. javac HelloWorld.java (to compile)
-1. java HelloWorld (to run a .class file, it's portable)
