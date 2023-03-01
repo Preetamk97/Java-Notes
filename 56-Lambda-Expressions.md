@@ -10,9 +10,9 @@ To use more than one parameter, wrap them in parentheses:
 
 `(parameter1, parameter2) -> expression`
 
-Expressions are limited. They have to immediately return a value, and they cannot contain variables, assignments or statements such as if or for. In order to do more complex operations, a code block can be used with curly braces. If the lambda expression needs to return a value, then the code block should have a return statement.
+Expressions are limited. They have to immediately return a value, and they cannot contain variables, assignments or statements such as **if** or **for**. In order to do more complex operations, a code block can be used with curly braces. If the lambda expression needs to return a value, then the code block should have a return statement.
 
-`(parameter1, parameter2) -> { code block }`
+**`(parameter1, parameter2) -> { code block }`**
 
 ## Example 1: Use a lambda expression in the ArrayList's forEach() method to print every item in the list:
 
@@ -31,12 +31,12 @@ public class Main {
 }
 ```
 
-Lambda expressions can be stored in variables if the variable's type is an interface which has only one method. The lambda expression should have the same number of parameters and the same return type as that method.
+Lambda expressions can be stored in variables if the variable's datatype is a **functional interface** which has only **one** method. The lambda expression should have the same number of parameters and the same return type as that method.
 
 ## Example 2
 
 ```java
-//A Functional Interface is an interface which contains only one abstract method/function.
+//A Functional Interface is an interface which contains only one method/function.
 
 @FunctionalInterface
 public interface MyInterface {

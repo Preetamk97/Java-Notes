@@ -18,6 +18,7 @@ public class Main {
 		TimerTask task = new TimerTask() {   // Here, we are creating a anonymous inner class that inherits from TimerTask class - does some alterations on the OG TimerTask class as per user requirements - and then we create an object 'task' from this inherited anonymous class. 
 			
 			int counter = 10;
+			
 			@Override
 			public void run() {  // run() method is the only undefined method of the OG TimerTask class - to be overrided by the anonymous class.  // When our 'timer' reaches a certain point, it is gonna execute the 'run' function of our 'task' instance.
 				

@@ -24,7 +24,7 @@ public class Main {
 		// Another Way of making an Array.
 		//***********************************
 		String[] cars = new String[3];
-		// Argument 3 in `new String[3]` means that there will be 3 strings in our array.
+		// Argument 3 in `new String[3]` means that there will be 3 strings in our array - array size.
 		
 		cars[0] = "Camaro";
 		cars[1] = "Corvette";

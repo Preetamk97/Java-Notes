@@ -1,3 +1,7 @@
+# Introduction:
+
+Java is a programming language from Sun Microsystems (Sun) developed by James Gosling in 1991. The main objective of Java is to make it platform-independent, which helps to write a program once and then run this program on multiple operating systems. Java also helps in developing distributed applications. It was inspired by C++ and has many of its syntaxes. The 1st Java version (Java 1.0) was made publicly available in 1995. Later, new enhanced versions of Java have been released.
+
 # Environment Setup
 
 ## Necessary Installations:
@@ -49,8 +53,8 @@ public class Main {
 
 # Compiling and Running Java File from Command Prompt:
 
-1. javac HelloWorld.java (to compile)
-1. java HelloWorld (to run a .class file, it's portable)
+1. javac Main.java (to compile and create the .class file)
+1. java Main (to run a .class file, it's portable)
 
 
 # Use of Escape Sequence '\t' (= tab while printing in console)
@@ -106,7 +110,7 @@ public class Main {
 }
 ```
 
-# Eclipse Tricks: 
+# Eclipse/VS Code Tricks: 
 
 1. **Keyboard Shortcut for writting `System.out.println`** -- Write `sysout` on the editor and hold (Ctrl + Space).
 

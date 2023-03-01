@@ -61,19 +61,19 @@ public class Main {
 		// For copying the car1 object into car2 object while keeping their memory addresses separate, we need to create a copy() method inside the Car class.
 		//car2.copy(car1);
 
-		// Created an new Car class contructor (which trakes another Car class object as parameter) and used the copy() method within it.
+		// Created an new Car class contructor (which takes another Car class object as parameter) and used the copy() method within it.
 		Car car2 = new Car(car1);
 
-		System.out.println(car1);
-		System.out.println(car2);
+		System.out.println(car1);  // Car@5acf9800   // Memory address stored inside car1 object
+		System.out.println(car2);  // Car@4617c264   // Memeory address stored inside car2 object
 		System.out.println();
-		System.out.println(car1.getMake());
-		System.out.println(car1.getModel());
-		System.out.println(car1.getYear());
+		System.out.println(car1.getMake());  // Chevrolet
+		System.out.println(car1.getModel());  // Camaro
+		System.out.println(car1.getYear());  // 2021
 		System.out.println();
-		System.out.println(car2.getMake());
-		System.out.println(car2.getModel());
-		System.out.println(car2.getYear());
+		System.out.println(car2.getMake());  // Chevrolet
+		System.out.println(car2.getModel());  // Camaro
+		System.out.println(car2.getYear());  // 2021
 	}
 }
 ```

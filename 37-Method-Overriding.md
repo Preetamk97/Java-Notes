@@ -7,7 +7,7 @@ public class Animal {
 
 public class Dog extends Animal {
 	
-	@Override
+	@Override   // Annotation // Java annotations are metadata (data about data) for our program source code.
 	void speak() {
 		System.out.println("The dog goes *bark*");
 	}

@@ -29,10 +29,11 @@ public class Main {
 
  public static void main(String[] args) {
   
-  //Dynamic Polymorphism
-  // Dynamic (run time) polymorphism is the polymorphism existed at run-time. Here, Java compiler does not know which method is called during compilation time. Only JVM decides which method is called at run-time.
+  // Dynamic Polymorphism
+  // Dynamic (run time) polymorphism is the polymorphism existing at run-time. Here, Java compiler does not know which method is called during compilation time. Only JVM decides which method is called at run-time.
   
   Scanner scanner = new Scanner(System.in);
+
   Animal animal;
   //Declaring an 'Animal animal' object reserves space for it in memory.	
   //But the compiler still does not know what type of Animal we want. 
@@ -44,15 +45,15 @@ public class Main {
   
   
   if(choice==1) {
-   animal = new Dog();	// construct Animal class animal object as a Dog class object.
+   animal = new Dog();	// construct Animal class animal object as a Dog class constructor.
    animal.speak();
   }
   else if(choice==2) {
-   animal = new Cat();	// construct Animal class animal object as a Cat class object.
+   animal = new Cat();	// construct Animal class animal object as a Cat class constructor.
    animal.speak();
   }
   else {
-   animal = new Animal();	// construct Animal class animal object as a Animal class object.
+   animal = new Animal();	// construct Animal class animal object as a Animal class constructor.
    System.out.println("That choice was invalid");
    animal.speak();
   }
