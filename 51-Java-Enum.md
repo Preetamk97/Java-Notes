@@ -1,10 +1,10 @@
 ```java
 // An 'enum' is like a class which has got a fixed (constant) & limited number of objects. In the below example (enum Planet), ,we have used only 1 int type attribute (int number) to associate with the enum objects. But in practise, each object can be associated with any number of attributes & of any dataType.
+//grouping of constants that behave similarly to objects
 
 public enum Planet {
 	//enum = enumerated (ordered listing of items/constants in a collection) = similar to a class.
-	//enum constants cannot be changed after the program compiles/runs.
-	//grouping of constants that behave similarly to objects
+	//enum constants cannot be changed after the program compiles i.e during runtime.
 	//We can associate a number with each of the enum constants/objects.
 	
 	//Planet enum constants/objects.

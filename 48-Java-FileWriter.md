@@ -1,3 +1,5 @@
+# FileWriter Class:
+
 ```java
 import java.io.FileWriter;
 import java.io.IOException;
@@ -9,11 +11,11 @@ public class Main {
 		try {
 			FileWriter writer = new FileWriter("poem.txt"); 
 			// Creating a FileWriter class object 'writer'.
-			// "poem.txt" is the name of the file that we are going to create. This will create the file "poem.txt" inside the project folder.
+			// "poem.txt" is the name of the file that we are going to create. This will create the file "poem.txt" inside the source folder.
 			// Refresh to see the result.
 			
 			// If we want to create the file anywhere other than the project folder, we would have to give the full file path/address (with file name) as argument string.
-			FileWriter writer2 = new FileWriter("C:\\Users\\preet\\Desktop\\secret_message.txt");
+			FileWriter writer2 = new FileWriter("C:\\Users\\User\\Desktop\\secret_message.txt");
 			// Creating a FileWriter class object 'writer2'.
 			// Creating a file "secret_message.txt" in Desktop.
 			// Refresh to see the result.
@@ -45,3 +47,39 @@ public class Main {
 	}
 }
 ```
+
+# BufferedWriter Class:
+
+```java
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		try {
+			FileWriter writer = new FileWriter("poem.txt"); // Creating the FileWriter Object
+
+			BufferedWriter bWriter = new BufferedWriter(writer); // Stream Chaining
+
+			// Writting the content to BufferedWriter object
+			bWriter.write("Roses are red \nViolets are blue \nBooty booty booty booty \nRockin' everywhere!");
+			bWriter.append("\n(A poem by Bro)");
+
+			// closing the writer object.
+			bWriter.close();
+			// implicitly invokes the 'flush()' method
+
+			System.out.println("Data written to file successfully !");
+
+		} catch (IOException e) {
+
+			e.printStackTrace();
+			// printing stack trace of the error object.
+		}
+	}
+}
+```
+

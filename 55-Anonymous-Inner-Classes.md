@@ -27,8 +27,7 @@ public class Main{
 //   void eat(){System.out.println("nice fruits");}  
 //   }; 
 
-//  1. A class is created, but its name is decided by the compiler, which extends the Person class and provides the implementation of the eat() method.
-//  2. An object of the Anonymous class is created that is referred to by 'p,' a reference variable of Person type.
+// A class is created, but its name is decided by the compiler, which extends the Person class and provides the implementation of the eat() method.
 //*********************************************************************************************
   p.eat();  
  }  

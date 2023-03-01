@@ -69,3 +69,28 @@ public class Main {
 
 ![](imgfiles/chap15/output-3.png)
 
+
+
+# Enhanced for Loop:
+
+```java
+// Enhanced for Loop
+public class Main {
+
+	public static void main(String[] args) {
+		String arr[] = {
+			"Ram", "Shyam", "Niko", "Jerry"
+		};
+
+		for (String name: arr) {
+			System.out.println("Hello " + name + " !");
+		}
+		// Hello Ram !
+		// Hello Shyam !
+		// Hello Niko ! 
+		// Hello Jerry !
+	}
+
+}
+```
+

@@ -41,7 +41,9 @@ public class Main {
 		Hero hero2 = new Hero("Superman",43,"everything");
 		
 		System.out.println(hero2.toString());
-		
+		// Superman  
+		// 43        
+		// everything
 	}
 }
 ```

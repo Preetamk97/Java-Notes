@@ -54,7 +54,8 @@ public class Main {
 			
 			// For each x (which might be an object of any 1 of the 3 classes - Car, Bicycle, and Boat) - The selection of the correct go() method which is to be applied on the object x (i.e the exact go() method which belongs the parent class of object x) - Is decided during the compile time.
 
-			// This is an example of Static Polymorphism.
+			// This is an example of Static Polymorphism / CompileTime Polymorphism.
+
 			// Static (compile time) polymorphism is the polymorphism exhibited at compile time. Here, Java compiler knows which method is called. 
 		}
 	}

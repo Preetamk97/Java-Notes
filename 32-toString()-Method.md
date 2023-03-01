@@ -43,7 +43,6 @@ public class Main {
           System.out.println(car.model);
           System.out.println(car.color);
           System.out.println(car.year);
-
 	}
 }
 ```

@@ -20,6 +20,9 @@ public class Main {
 		
 		double e = Math.ceil(x); // Math.ceil(x) gives the ceiling value of x.
 		System.out.println(e);  // 4.0
+
+		double f = Math.floor(x); // Math.floor(x) gives the floor value of x.
+		System.out.println(f);  // 3.0
 	}
 }
 ```

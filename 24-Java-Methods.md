@@ -40,5 +40,5 @@ public class Main {
 
 // Important Difference Between Argument and String.
 //*************************************************
-// The values that are declared within a function when the function is called are known as an argument. Whereas, the variables that are defined when the function is declared are known as a parameter.
+// The values that are declared within a function when the function is called are known as an arguments. Wherease, the variables that are defined when the function is declared are known as a parameters.
 ```

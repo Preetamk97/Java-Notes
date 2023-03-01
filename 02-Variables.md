@@ -7,7 +7,7 @@ public class Main {
 		
 		x = 123; // Variable Assignment
 		
-		int y = 145; // Variable Initialization
+		int y = 145; // Variable Initialization (Declaration + Assignment)
 		
 		System.out.println("x");	// Printing a String Literal.
 		System.out.println(x);	// Printing the value of variable x.

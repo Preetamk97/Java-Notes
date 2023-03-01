@@ -7,7 +7,7 @@ public class Main {
 		
 		// Way 1:
 		//********
-		String[][] cars = new String[3][3];
+		String[][] cars = new String[3][3];  // new String[rows][columns];
 		
 		// Way 2:
 		//*******

@@ -67,6 +67,8 @@ public class Main {
 		
 		bike.go();  // This vehicle is moving
 		bike.stop();  // This vehicle is stopped
+		System.out.println(bike.wheels);  // 2
+		System.out.println(bike.pedals);  // 2
 		
 		// Since Bicycle class has no overided methods, the go() & stop() methods that the object 'bike' executes those inherited from the parent Vehicle class. 	
 	}

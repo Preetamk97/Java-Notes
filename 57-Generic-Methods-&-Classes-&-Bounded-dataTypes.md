@@ -3,6 +3,56 @@
 ```java
 public class Main {
 
+	// Without Generic Method:
+	   
+	// public static void displayArray(Integer[] array) {
+
+	//     for(Integer x : array) {
+	//         System.out.print(x+" ");
+	//     }
+	//     System.out.println();
+	// }
+	
+	// public static void displayArray(Double[] array) {
+
+	//     for(Double x : array) {
+	//         System.out.print(x+" ");
+	//     }
+	//     System.out.println();
+	// }
+	
+	// public static void displayArray(Character[] array) {
+
+	//     for(Character x : array) {
+	//         System.out.print(x+" ");
+	//     }
+	//     System.out.println();
+	// }
+	
+	// public static void displayArray(String[] array) {
+
+	//     for(String x : array) {
+	//         System.out.print(x+" ");
+	//     }
+	//     System.out.println();
+	// }
+	   
+	// Generic method
+	// Generic Method will work for any and every reference dataType/wrapper class - that we give in place of 'Thing'.
+	// To make a Generic Method, <Thing> or <T> is writen just before the return type of the function declaration.
+	public static <Thing> void displayArray(Thing[] array) {
+
+		for(Thing x : array) {
+			System.out.print(x+" ");
+		}
+		System.out.println();
+	}
+	
+	// Generic method with generic return type 
+	public static <Thing> Thing firstIndex(Thing[] array) {
+		return array[0];
+	}
+
     public static void main(String args[]) {
         
         Integer[] intArray = {1, 2, 3, 4, 5};
@@ -27,56 +77,6 @@ public class Main {
         System.out.println(firstIndex(charArray));
     }
 	   
-    // Without Generic Method:
-	   
-    // public static void displayArray(Integer[] array) {
-
-    //     for(Integer x : array) {
-    //         System.out.print(x+" ");
-    //     }
-    //     System.out.println();
-    // }
-    
-    // public static void displayArray(Double[] array) {
-
-    //     for(Double x : array) {
-    //         System.out.print(x+" ");
-    //     }
-    //     System.out.println();
-    // }
-    
-    // public static void displayArray(Character[] array) {
-
-    //     for(Character x : array) {
-    //         System.out.print(x+" ");
-    //     }
-    //     System.out.println();
-    // }
-    
-    // public static void displayArray(String[] array) {
-
-    //     for(String x : array) {
-    //         System.out.print(x+" ");
-    //     }
-    //     System.out.println();
-    // }
-	   
-    // Generic method
-    // Generic Method will work for any and every reference dataType/wrapper class - that we give in place of 'Thing'.
-    // To make a Generic Method, <Thing> or <T> is writen just before the return type of the function declaration.
-    public static <Thing> void displayArray(Thing[] array) {
-
-        for(Thing x : array) {
-            System.out.print(x+" ");
-        }
-        System.out.println();
-    }
-    
-    
-    // Generic method with generic return type 
-    public static <Thing> Thing firstIndex(Thing[] array) {
-        return array[0];
-    }
 }
 ```
 
@@ -179,7 +179,7 @@ public class MyGenericClass <Thing>{
 public class Main {
 	public static void main(String[] args) {
 		
-	   // While creating objects/instances of any Generic class, we can pass in (the specified # of) arguments of any reference dataType or wrapper class - to its constructor.
+	   // While creating objects/instances of any Generic class, we can pass in (the specified number of) arguments of any reference dataType or wrapper class - to its constructor.
 		
 	   MyGenericClass<Integer> myInt = new MyGenericClass<>(1);  // Passing argument of Integer wrapper class.
 	   MyGenericClass<Double> myDouble = new MyGenericClass<>(3.14);  // Passing argument of Double wrapper class.
@@ -269,8 +269,7 @@ public class MyGenericClass <Thing1 extends Number, Thing2 extends Number>{
 	}
 	
 	public Thing2 getValue() {
-		return y;
-		
+		return y;	
 	}
 }
 

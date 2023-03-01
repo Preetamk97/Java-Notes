@@ -4,16 +4,16 @@
 1. Since they have no name, there’s no other way to refer to them beyond the point when they are created. Consequently, they have “expression scope,” meaning they are created, evaluated, and destroyed everything within a single expression.
 
 ```java
-public class Square {
+public class Main {
 	
 	int side;
 	
-	public Square(int side) {
+	public Main(int side) {
 		this.side = side; 
 	}
 	
 	public void perimeter() {
-		int perimeter = side * 4;
+		int perimeter = this.side * 4;
 		System.out.println("Perimeter is = "+perimeter);
 	}
 	
@@ -24,10 +24,10 @@ public class Square {
 
 	public static void main(String[] args) {
 		// Creating Anonymous Objects
-		new Square(5).perimeter();	//Perimeter is = 20
-		new Square(10).area();	//Area is = 100
-		new Square(15).perimeter();	//Perimeter is = 60
-		new Square(20).area();	//Area is = 400
+		new Main(5).perimeter();	//Perimeter is = 20
+		new Main(10).area();	//Area is = 100
+		new Main(15).perimeter();	//Perimeter is = 60
+		new Main(20).area();	//Area is = 400
 	}
 
 }
